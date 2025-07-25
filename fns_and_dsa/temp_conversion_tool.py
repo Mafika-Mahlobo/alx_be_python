@@ -19,4 +19,4 @@ try:
         case _:
             print(print("Invalid input. Enter C or F"))
 except ValueError as err:
-    print(f"Invalid value. {err}")
+    print("Invalid temperature. Please enter a numeric value.")
