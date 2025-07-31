@@ -24,7 +24,7 @@ class TestCalc(unittest.TestCase):
         with self.assertRaises(TypeError):
             self.calc.subtract("ten", "five")
         
-    def test_multiply(self):
+    def test_multiplication(self):
         self.assertEqual(self.calc.multiply(2, 2), 4)
         self.assertEqual(self.calc.multiply(3, 0), 0)
         self.assertEqual(self.calc.multiply(4, -1), -4)
