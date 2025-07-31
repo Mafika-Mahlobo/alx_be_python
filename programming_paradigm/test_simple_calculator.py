@@ -6,7 +6,7 @@ class TestCalc(unittest.TestCase):
     def setUp(self):
         self.calc = SimpleCalculator()
         
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(4, 5), 9)
         self.assertEqual(self.calc.add(-2, 2), 0)
         self.assertEqual(self.calc.add(-5, 3), -2)
@@ -14,7 +14,7 @@ class TestCalc(unittest.TestCase):
         with self.assertRaises(TypeError):
             self.calc.add("ten", "five")
         
-    def test_subtract(self):
+    def test_subtraction(self):
         self.assertEqual(self.calc.subtract(10, 5), 5)
         self.assertEqual(self.calc.subtract(2, 3), -1)
         self.assertEqual(self.calc.subtract(-3, 2), -5)
