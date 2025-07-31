@@ -32,7 +32,7 @@ class TestCalc(unittest.TestCase):
         with self.assertRaises(TypeError):
             self.calc.multiply("ten", "five")
         
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(5, 5), 1)
         with self.assertRaises(ZeroDivisionError):
